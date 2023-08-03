@@ -12,7 +12,7 @@ const Layout = ({ children, container = true, className = 'default-layout'}) => 
           </a>
           
           <nav class='navbar-menu'>
-            <Link.Root href='/'>Portfolio</Link.Root>
+            <Link.Root href='/'>My Work</Link.Root>
             <Link.Root href='/about'>About Me</Link.Root>
             <Link.Root href={`mailto:${siteMetadata?.email}?subject=benadams.io Website Inquiry`}>Contact</Link.Root>
           </nav>

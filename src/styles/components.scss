@@ -1,0 +1,39 @@
+/* Splash */
+.splash {
+  background: $crema;
+  background: linear-gradient(166deg, rgba(255,255,255,1) 0%, rgba(244,239,236,1) 35%, rgba(237,230,225,1) 100%);
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  h1 {
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 4.2rem;
+    margin-bottom: 1rem;
+    strong {
+      font-weight: bold;
+    }
+  }
+  p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .container {
+    max-width: 800px;
+    padding-right: 500px;
+
+  }
+  .aside-image {
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    img {
+      width: 500px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,11 +1,10 @@
 import { Link } from '@kobalte/core';
-
+import { siteMetadata } from '../data/metadata';
 import logo from '../assets/BA-logo.svg';
 
-
-const Layout = ({ children }) => {
+const Layout = ({ children, container = true, className = 'default-layout'}) => {
   return (
-    <div class='portfolio-wrapper'>
+    <div class='wrapper' className={className}>
       <header class='navbar'>
         <div class="container">
           <a href="/" class="navbar-logo">
@@ -15,12 +14,12 @@ const Layout = ({ children }) => {
           <nav class='navbar-menu'>
             <Link.Root href='/'>Portfolio</Link.Root>
             <Link.Root href='/about'>About Me</Link.Root>
-            <Link.Root href='/contact'>Contact</Link.Root>
+            <Link.Root href={`mailto:${siteMetadata?.email}?subject=benadams.io Website Inquiry`}>Contact</Link.Root>
           </nav>
         </div>
       </header>
 
-      <main class="container">
+      <main class={container ? 'container' : ''}>
         {children}
       </main>
     </div>
